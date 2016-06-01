@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Use WebStorm</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+
+    <![endif]-->
+    <style>
+        h1, h2 {
+            text-transform: none !important;
+        }
+    </style>
+</head>
+<body>
+<div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h2>Develop Javascript Application Using WebStorm</h2>
+        </section>
+
+        <section>
+            <h2>Basic Functions</h2>
+            <ul>
+                <li>Project File Management</li>
+                <li>Edit</li>
+                <li>Search</li>
+                <li>Debug</li>
+                <li>Git Integration</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Essential tooltips</h2>
+            <ul>
+                <li>Use Keyboard Shortcuts</li>
+                <li>Use ctrl+shift+A for settings/actions</li>
+                <li>Use Search Everywhere (double shift)</li>
+            </ul>
+        </section>
+        <section>
+            <section>
+                <h2>Project File Management</h2>
+            </section>
+            <section>
+                <h2>Add Multiple Source Folders</h2>
+                <p>Setting => Directories</p>
+            </section>
+            <section>
+                <h2>Manage Scopes</h2>
+                <h2>External Library</h2>
+            </section>
+        </section>
+        <section>
+            <h2>Search</h2>
+            <ul>
+                <li>Real Time Search Preview</li>
+                <li>Search Actions/Settings</li>
+                <li>You could search in List/Tree</li>
+                <li>Search/Replace By Scope</li>
+            </ul>
+        </section>
+        <section>
+            <section>
+                <h2>Editing</h2>
+            </section>
+            <section>
+                <h2>WebStorm is really Smart for editing</h2>
+                <ul>
+                    <li>Auto complete for html/css (ctrl+space)</li>
+                    <li>Auto complete for imported JS library</li>
+                    <li>Jump between methods</li>
+                    <li>Auto format</li>
+                    <li>Refactor</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Advanced Editing</h2>
+                <ul>
+                    <li>Live Template (ctrl J, ctrl alt T), Surround with (Emmet Support)</li>
+                    <li>Multi carets/select (ctrl+shift+alt+click, double ctrl + arrow)</li>
+                    <li>column selection mode (alt + mouse)</li>
+                    <li>Paste from history / local history</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Keyboard shortcuts</h2>
+                <ul>
+                    <li>auto complete (ctrl + space)</li>
+                    <li>comment (ctrl + /)</li>
+                    <li>format (ctrl + alt + l)</li>
+                    <li>previous caret/change (ctrl+alt left/right, ctrl+shift+backspace)</li>
+                    <li>previous next function (alt + up/down)</li>
+                    <li>Recent files / Recent changed files (ctrl+E, ctrl+shift+E)</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <h2>Debug</h2>
+            <p>Debug Javascript Within IDE (need plugin, only support chrome, DEMO)</p>
+            <p>Which part is better then debug in browser ? </p>
+            <p>Answer : Real-time reload(no refresh needed) <br> better break point management</p>
+        </section>
+        <section>
+            <h2>Productivity</h2>
+            <ul>
+                <li>Task/Context Management</li>
+                <li>Usage Statistics, Tools/Productivity Guide</li>
+                <li>Bookmark</li>
+                <li>Git History</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Other useful features</h2>
+            <ul>
+                <li>Presentation Mode</li>
+                <li>Color/Theme customization</li>
+                <li>Export code to html</li>
+            </ul>
+        </section>
+    </div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+</script>
+
+</body>
+</html>

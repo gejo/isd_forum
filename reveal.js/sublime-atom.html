@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>What are the best JavaScript IDEs and editors?</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3><a href='#'>Some Questions</a></h3>
+					<p class="fragment">Do you write JavaScript?</p>
+					<p class="fragment">How long do you spend writing JavaScript every day?</p>
+					<p class="fragment">What are the best JavaScript IDEs and editors?</p>
+				</section>
+				<section>
+					<div>
+						<iframe src="http://www.slant.co/topics/1686/compare/~webstorm_vs_sublime-text_vs_atom" width='100%' height='600'></iframe>
+					</div>
+				</section>
+				<section>
+					<h1>Sublime Text</h1>
+					<h3>The text editor you'll fall in love with</h3>
+					<p>
+						<small>Created by <a href="#">Wangla4</a> </small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<img href='#' data-src="./sublime_text2.ico" />
+						<p>
+							Sublime Text is a sophisticated text editor for code, markup and prose. You'll love the slick user interface, extraordinary features and amazing performance.
+						</p>
+						<a href='#/sublime' class='fragment'>
+							<img width="178" height="238" data-src="./arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section id='sublime'>
+						<iframe src='http://www.sublimetext.com/' width='100%' height='600'></iframe>
+					</section>
+				</section>
+
+				<section>
+					<h2>Today's Agenda</h2>
+					<ol>
+						<li><a href='http://www.sublimetext.com/3' target='_blank'>Installation</a></li>
+						<li><a href='shortCut'>Shortcuts</a></li>
+						<li><a href='plugin'>Plugins</a></li>
+					</ol>
+				</section>
+				<section>
+					<h2>安装 Package Control</h2>
+					<p>使用Ctrl+`打开命令行</p>
+					<pre><code class="hljs" data-trim contenteditable>
+import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+					</code></pre>
+					<p>Package Control 是你安装其他插件的基础！</p>
+				</section>
+				<section id='shortCut'>
+					<h2>常用快捷键介绍</h2>
+					<ul>
+						<li>Goto Anything: Ctrl + P</li>
+						<li>多行游标功能: Ctrl + D</li>
+						<li>找函数: Ctrl + R</li>
+						<li>跳转至某一行: Ctrl + G</li>
+						<li>粘贴(保持缩进)： Ctrl + Shift + V</li>
+						<li>重新打开关闭的标签: Ctrl + Shift +Ｔ</li>
+						<li>上下行移动: Ctrl + Shift + ↑↓ </li>
+						<li>选中花括号里面的全部内容不包括{}: Ctrl + Shift + M</li>
+						<li>more ...</li>
+					</ul>
+					<p class='fragment'>try Ctrl + Shift + P</p>
+					<p class='fragment'>See Preferences -> Key Bindings - Default and Find Yours!</p>
+				</section>
+				<section id='plugin'>
+					<h2>常用插件介绍</h2>
+					<ul>
+						<li><a href='#/Alignment'>Alignment</a></li>
+						<li><a href='#/AutoFileName'>AutoFileName</a></li>
+						<li><a href='#/Bracket​Highlighter'>Bracket​Highlighter</a></li>
+						<li><a href='#/DocBlockr'>DocBlockr</a></li>
+						<li><a href='#/Emmet'>Emmet</a></li>
+						<li><a href='#/FileDiffs'>FileDiffs</a></li>
+						<li><a href='#/Git'>Git</a></li>
+						<li><a href='#/GitGutter'>GitGutter</a></li>
+						<li><a href='#/GoToLastEdit'>GoToLastEdit</a></li>
+						<li><a href='#/JsFormat'>JsFormat</a></li>
+						<li><a href='#/jQuery'>jQuery</a></li>
+						<li><a href='#/MarkDownPrewView'>MarkDownPrewView</a></li>
+						<li><a href='#/SideBarEnhancements'>SideBarEnhancements</a></li>
+						<li><a href='#/Sublime​Code​Intel'>Sublime​Code​Intel</a></li>
+						<li><a href='#/SublimeLinter'>SublimeLinter</a></li>
+						<li><a href='#/SideBar'>SideBar</a></li>
+					</ul>
+				</section>
+				<section id ='Alignment'>
+					<h2>Alingment</h2>
+					<p>Alignment 是一个代码格式化插件，它可以使多行代码中的等号对齐，也可以调整多行代码为一个缩进级别，默认快捷键是 ctrl+alt+a </p>
+				</section>
+				<section id ='AutoFileName'>
+					<h2>AutoFileName</h2>
+					<p>提示你路径下匹配到的文件</p>
+				</section>
+				<section id ='Bracket​Highlighter'>
+					<h2>Bracket​Highlighter</h2>
+					<p>Bracket​Highlighter 是一个括号、引号、标签高亮插件，支持 []、()、{}、""、'' 和 <tag></tag> 等，比 Sublime Text 自带的高亮要明显得多。</p>
+				</section>
+				<section id='DocBlockr'>
+					<h2>DocBlockr</h2>
+					<p>DocBlockr帮助你完善你的代码文档, 在方法的开头输入'/**',然后回车试试</p>
+				</section>
+				<section id='Emmet'>
+					<h2>Emmet</h2>
+					<p>Emmet是一个前端开发的利器，如果你需要写Html的话......</p>
+					<p>请看<a href='http://docs.emmet.io/' target="_blank">官方文档</a> 以及<a href="http://docs.emmet.io/cheat-sheet/" target="_blank">Cheet Sheet</a>!</p>
+				</section>
+				<section id='FileDiffs'>
+					<h2>FileDiffs</h2>
+					<p>这个插件允许你看到SublimeText中两个不同文件的差异。你可以比较的对象可以是从剪贴板中复制的数据，或工程中的文件，当前打开的文件等。</p>
+				</section>
+				<section id='Git'>
+					<h2>Git</h2>
+					<p>Git要装，但是你习惯用命令行吗...</p>
+				</section>
+				<section id='GitGutter'>
+					<h2>GitGutter</h2>
+					<p>在编辑器中显示你的修改痕迹，并且在支持修改过过的地方快速切换!</p>
+				</section>
+				<section id='GoToLastEdit'>
+					<h2>GoToLastEdit</h2>
+					<p>返回到你最近修改过的地方！</p>
+				</section>
+				<section id='JsFormat'>
+					<h2>JsFormat</h2>
+					<p>帮助你格式化压缩的JS文件，比如:clientFramework.js!</p>
+				</section>
+				<section id='jQuery'>
+					<h2>jQuery</h2>
+					<p>如果你需要使用jQuery....</p>
+				</section>
+				<section id='MarkDownPrewView'>
+					<h2>MarkDownPrewView</h2>
+					<p>如果喜欢经常用mk语法来写一些东西的话...</p>
+				</section>
+				<section id='SideBarEnhancements'>
+					<h2>SideBarEnhancements</h2>
+					<p>SideBarEnhancements 是一款很实用的右键菜单增强插件，有以 diff 形式显示未保存的修改、在文件管理器中显示该文件、复制文件路径、在侧边栏中定位该文件等功能，也有基础的诸如新建文件/目录，编辑，打开/运行，显示，在选择中/上级目录/项目中查找，剪切，复制，粘贴，重命名，删除，刷新等常见功能。</p>
+				</section>
+				<section id='Sublime​Code​Intel'>
+					<h2>Sublime​Code​Intel</h2>
+					<p>Sublime​Code​Intel 是一个代码提示、补全插件，支持 JavaScript、Mason、XBL、XUL、RHTML、SCSS、Python、HTML、Ruby、Python3、XML、Sass、XSLT、Django、HTML5、Perl、CSS、Twig、Less、Smarty、Node.js、Tcl、TemplateToolkit 和 PHP 等语言，是 Sublime Text 自带代码提示功能的很好扩展。它还有一个功能就是跳转到变量、函数定义的地方，十分方便。</p>
+				</section>
+				<section id='SublimeLinter'>
+					<h2>SublimeLinter</h2>
+					<p>SublimeLinter 是一个代码校验插件，它可以帮你找出错误或编写不规范的代码，支持 C/C++、CoffeeScript、CSS、Git Commit Messages、Haml、HTML、Java、JavaScript、Lua、Objective-J、Perl、PHP、Puppet、Python、Ruby 和 XML 语言。</p>
+					<p>需要配合Js-linter使用，同时需要Node.js的支持</p>
+				</section>
+				<section id='soda'>
+					<h2>Wonderful Themes</h2>
+					<ul>
+						<li>Theme Soda</li>
+						<li>Theme SodaReloaded</li>
+						<li>...</li>
+					</ul>
+				</section>
+				<section id='Final'>
+					<h2>Find More @ <a href='https://github.com/'>github</a></h2>
+				</section>
+
+				<section id='Atom'>
+					<h1><a href='https://atom.io/'>ATOM</a></h1>
+					<h3>A hackable text editor for the 21st Century</h3>
+				</section>
+				<section>
+					<img src="./atom.JPG" width="800" height="400" />
+					<p class='fragment'>Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.</p>
+				</section>
+				<section id='sublime-atom'>
+					<table>
+						<thead>
+							<tr>
+								<th>Editor</th>
+								<th>Sublime</th>
+								<th>Atom</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>启动速度</td>
+								<td>快</td>
+								<td>不断变快</td>
+							</tr>
+							<tr>
+								<td>开发</td>
+								<td>个人，Python， 更新变慢</td>
+								<td>社区, github官方, 基于前端技术</td>
+							</tr>
+							<tr>
+								<td>价格</td>
+								<td>收费，但可永久免费试用</td>
+								<td>免费</td>
+							</tr>
+							<tr>
+								<td>插件开发</td>
+								<td>Python</td>
+								<td>JS开发桌面应用</td>
+							</tr>
+							<tr>
+								<td>React / React Native</td>
+								<td>Jsx 语法支持不完善</td>
+								<td>相对较好</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section id='nuclide'>
+					<h1><a href='https://nuclide.io/'>NUCLIDE</a></h1>
+					<img src='./nuclide.JPG' width="960" height="600" />
+				</section>
+				<section>
+					Thanks!
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
