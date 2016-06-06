@@ -109,6 +109,52 @@
 </code></pre>
                 </section>
                 <section>
+                    <h2>Scope</h2>
+                    <ul>
+                        <li>Global Scope</li>
+                        <li>Function Scope</li>
+                        <li>Block Scope</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Hoisting</h2>
+                    <pre><code class="hljs" data-trim contenteditable>
+                    var a = 2;
+
+foo();                  // works because `foo()`
+                        // declaration is "hoisted"
+
+function foo() {
+    a = 3;
+
+    console.log( a );   // 3
+
+    var a;              // declaration is "hoisted"
+                        // to the top of `foo()`
+}
+
+console.log( a );   // 2
+</code></pre>
+                </section>
+                <section>
+                    <h2>Nested Scope</h2>
+                    <pre><code class="hljs" data-trim contenteditable>
+                    function foo() {
+    var a = 1;
+
+    function bar() {
+        var b = 2;
+
+        function baz() {
+            var c = 3;
+
+            console.log( a, b, c ); // 1 2 3
+        }
+    }
+ }
+                    </code></pre>
+                </section>
+                <section>
                     <h2>Closure</h2>
                     <p>You can think of closure as a way to "remember" and continue to access a function's scope (its variables) even once the function has finished running.</p>
                 </section>
