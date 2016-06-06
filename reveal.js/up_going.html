@@ -30,7 +30,24 @@
             <div class="slides">
                 <section>
                     <h1>You Don't Know JS</h1>
-                    <h3>Part I : Up & Going</h3>
+                    <p>Anti
+                    <a href="http://shop.oreilly.com/product/9780596517748.do">  The Good Parts</a>
+                    </p>
+                    <ul>
+                        <li><a href="https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going">Up & Going</a></li>
+
+                        <li><a href="https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&%20closures/README.md#you-dont-know-js-scope--closures">Scope & Closures</a></li>
+
+                        <li><a href="https://github.com/getify/You-Dont-Know-JS/blob/master/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes">this & Object Prototypes</a></li>
+
+                        <li><a href="https://github.com/getify/You-Dont-Know-JS/blob/master/types%20&%20grammar/README.md#you-dont-know-js-types--grammar">Types & Grammar</a></li>
+
+                        <li><a href="https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&%20performance/README.md#you-dont-know-js-async--performance">Async & Performance</a></li>
+                        <li><a href="https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/README.md#you-dont-know-js-es6--beyond">ES6 & Beyond</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Part I : Up & Going</h1>
                     <p>
                     <small>Presented by <a href="">Joy Ge</a></small>
                     </p>
@@ -145,11 +162,59 @@ var makeFun = function(x) {
         });
 </code></pre>
                 </section>
+                <section>
+                    <h2>Objects & Prototypes</h2>
+                    <p>Every object in JavaScript has a link to another object called its <a>prototype</a>. A collection of objects can be represented as a rooted tree. Browsers expose an object's prototype via its <a>__proto__</a>property. (This causes a great deal of confusion because an object's __proto__ and prototype properties rarely refer to the same object.) The root of such a tree will be the object referenced by <a>Object.prototype</a> in JavaScript.</p>
+                </section>
+                <section>
+                    <h2>An Example</h2>
+
+                    <pre><code class="hljs" data-trim contenteditable>
+// Rectangle is an ordinary function.
+var Rectangle = function() {};
+
+// Every function has a property named 'prototype' whose value is an object
+// with a property named 'constructor' that points back to the original
+// function. It is possible to add more properties to this object.
+Rectangle.prototype.width = 3;
+Rectangle.prototype.height = 4;
+
+// Creates an instance of a Rectangle, which is an object whose
+// __proto__ property points to Rectangle.prototype. This is discussed
+// in more detail in Chapter 5 on Classes and Inheritance.
+var rect = new Rectangle();
+                    </code></pre>
+                </section>
+                <section>
+                    <h2>Object diagram of the example</h2>
+                    <img href='#' data-src="./appendix_b_box_and_arrow.png" />
+
+                </section>
+
+                <section>
+                    <h2>Exercise Moment</h2>
+                    <pre><code class="hljs" data-trim contenteditable>
+                    //Draw the prototype chain diagram of the following code
+
+        var Programmer = function(language, skill) {
+            this.language = language;
+            this.skill = skill;
+        }
+
+        var joy = new Programmer("JavaScript", "1");
+        var stike = Object.create(joy);
+        stike.skill = 2;
+                    </code></pre>
+                </section>
 
 
 
-
-
+                <section style="text-align: left;">
+                    <h1>THE END</h1>
+                    <p>
+                        欢迎关注<a href="http://10.222.3.118:4567/">ISD上海技术论坛</a> <br>
+                    </p>
+                </section>
 
 
 

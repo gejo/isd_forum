@@ -70,16 +70,28 @@ describe('UpGoing', function() {
         }
 
         var obj1 = {
-            bar : "obj1",
-            foo : foo
+            bar: "obj1",
+            foo: foo
         }
         var obj2 = {
-            bar : "obj2",
+            bar: "obj2",
         }
+
+        var Programmer = function(language, skill) {
+            this.language = language;
+            this.skill = skill;
+        }
+
+        var joy = new Programmer("JavaScript", "1");
+        var stike = Object.create(joy);
+        stike.skill = 2;
+
         it('which object is this', function() {
             assert.equal("global", foo());
             assert.equal("obj1", obj1.foo());
             assert.equal("obj2", foo.call(obj2));
+            assert.equal("1", joy.skill);
+            assert.equal("2", stike.skill);
         });
     });
 
