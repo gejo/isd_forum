@@ -54,18 +54,20 @@
                 </section>
                 <section>
                     <h2>Values & Types</h2>
-                    <ul>
+                    <ul class="fragment">
                         <li>string</li>
                         <li>number</li>
                         <li>boolean</li>
                         <li>null</li>
                         <li>undefined</li>
-                        <li>object</li>
                         <li>symbol (new to ES6)</li>
+                        <li>object</li>
+                        <li>function</li>
                     </ul>
                 </section>
                 <section>
                     <h2>YDK Moment!</h2>
+                    <a href="http://embed.plnkr.co/HSkgXe/">http://embed.plnkr.co/HSkgXe/</a>
                     <pre><code class="hljs" data-trim contenteditable>
                     //Which assertion will fail?
             var a;
@@ -94,7 +96,6 @@
                     <h2>YDK Moment!</h2>
                     <pre><code class="hljs" data-trim contenteditable>
                     //Which assertion will fail?
-            var a;
             var a = [1, 2, 3];
             var b = [1, 2, 3];
             var c = "1,2,3";
@@ -163,7 +164,7 @@ console.log( a );   // 2
                     <p>Write a function that takes an argument and returns a function that returns that argument.</p>
                     <pre><code class="hljs" data-trim contenteditable>
     describe('closure', function() {
-        it('should return a function', function() {
+        it('should return a function that returns the given parameter', function() {
             var mirror1 = makeFun(1);
             assert.equal(1, mirror1());
         });
@@ -210,7 +211,9 @@ var makeFun = function(x) {
                 </section>
                 <section>
                     <h2>Objects & Prototypes</h2>
-                    <p>Every object in JavaScript has a link to another object called its <a>prototype</a>. A collection of objects can be represented as a rooted tree. Browsers expose an object's prototype via its <a>__proto__</a>property. (This causes a great deal of confusion because an object's __proto__ and prototype properties rarely refer to the same object.) The root of such a tree will be the object referenced by <a>Object.prototype</a> in JavaScript.</p>
+                    <p>Everything is <a>Object</a>?</p>
+                    <p><a>Function</a> is Object?</p>
+                    <p><a>Object</a> is Function?</p>
                 </section>
                 <section>
                     <h2>An Example</h2>
@@ -242,14 +245,14 @@ var rect = new Rectangle();
                     <pre><code class="hljs" data-trim contenteditable>
                     //Draw the prototype chain diagram of the following code
 
-        var Programmer = function(language, skill) {
+        var Programmer = function(language, level) {
             this.language = language;
-            this.skill = skill;
+            this.level = level;
         }
 
-        var joy = new Programmer("JavaScript", "1");
+        var joy = new Programmer("JavaScript", 1);
         var stike = Object.create(joy);
-        stike.skill = 2;
+        stike.level = 2;
                     </code></pre>
                 </section>
 
