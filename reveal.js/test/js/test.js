@@ -44,7 +44,7 @@ describe('UpGoing', function() {
             var c = "1,2,3";
             assert.equal(true, a == c);
             assert.equal(true, b == c);
-            assert.equal(false, a == b);
+            assert.equal(true, a == b);
         });
         it('NaN equal', function() {
             var a = 28;
